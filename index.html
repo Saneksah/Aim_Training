@@ -12,22 +12,22 @@
       <a href="#" class="start up" id="start">Начать игру</a>
     </div>
 
-    <div class="screen up">
+    <div class="screen">
       <h1>Выберите время</h1>
       <ul class="time-list" id="time-list">
         <li>
-          <button class="time-btn" data-time="10">
-            10 сек
-          </button>
-        </li>
-        <li>
-          <button class="time-btn" data-time="20">
-            20 сек
+          <button class="time-btn" data-time="15">
+            15 сек
           </button>
         </li>
         <li>
           <button class="time-btn" data-time="30">
             30 сек
+          </button>
+        </li>
+        <li>
+          <button class="time-btn" data-time="45">
+            45 сек
           </button>
         </li>
       </ul>
@@ -36,6 +36,11 @@
     <div class="screen">
       <h3>Осталось <span id="time">00:00</span></h3>
       <div class="board" id="board"></div>
+    </div>
+
+    <div class="screen">
+      <h3 id="total">Ваш счёт: ${score}<br/>Ваша меткость: ${score/total*100}%</h3><br/>
+      <!-- <button class="again">Заново</button> -->
     </div>
 
     <script src="app.js"></script>
